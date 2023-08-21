@@ -1,0 +1,43 @@
+.navbar-logo {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.logo-margin {
+    margin-right: 0.5em;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.article-preview {
+    margin: 1em;
+    min-width: 15em;
+    max-width: 30em;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.article-preview .card-subtitle {
+    opacity: 0.7;
+    font-size: 0.85em;
+    font-weight: 400;
+}
+
+.article-preview hr {
+    margin: 0.5em 0;
+    visibility: hidden;
+}
+
+.thumbnail img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-subtitle {
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 1em;
+}

@@ -1,0 +1,2 @@
+trunk build
+trunk serve
