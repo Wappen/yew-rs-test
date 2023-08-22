@@ -33,6 +33,15 @@
 
 .article-content img {
     border-radius: 0.5em;
+    max-width: 100%;
+
+    outline: white 0 solid;
+    transition: outline 0.05s ease-out;
+}
+
+.article-content img:hover {
+    outline: white 0.2em solid;
+    transition: outline 0.05s ease-out;
 }
 
 .article hr {

@@ -36,8 +36,7 @@ Mauris augue neque gravida in fermentum et sollicitudin. Non blandit massa enim 
 Nulla malesuada pellentesque elit eget gravida. Morbi leo urna molestie at elementum. Neque vitae tempus quam pellentesque. In iaculis nunc sed augue lacus viverra. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Sit amet justo donec enim diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Id venenatis a condimentum vitae sapien pellentesque habitant. Malesuada fames ac turpis egestas sed tempus urna et. Et tortor consequat id porta nibh venenatis cras. Porttitor lacus luctus accumsan tortor posuere ac ut. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Neque viverra justo nec ultrices dui sapien eget mi proin. Convallis tellus id interdum velit laoreet. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Eget arcu dictum varius duis at.
 
 ## Where?
-
-<img src="/static/img/map.png" width="300">
+![map](/static/img/map.png)
 
 Orci a scelerisque purus semper eget duis at tellus at. Mi ipsum faucibus vitae aliquet nec ullamcorper. Tincidunt id aliquet risus feugiat. Lorem ipsum dolor sit amet consectetur. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Facilisis volutpat est velit egestas dui id ornare arcu odio. Vehicula ipsum a arcu cursus vitae congue. Ultricies lacus sed turpis tincidunt id aliquet. Id ornare arcu odio ut. Velit sed ullamcorper morbi tincidunt ornare massa eget. Pharetra sit amet aliquam id diam maecenas. Vulputate sapien nec sagittis aliquam malesuada.
 
