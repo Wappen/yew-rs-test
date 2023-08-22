@@ -70,7 +70,7 @@ mod translator {
     fn translate_image(text: String, url: String) -> String {
         log::info!("Image: {} {}", text, url);
         format!(
-            "<a href=\"{}\"><img src=\"{}\" alt=\"{}\" /></a>",
+            "<a href=\"{}\" target=”_blank”><img src=\"{}\" alt=\"{}\" /></a>",
             url, url, text
         )
     }
