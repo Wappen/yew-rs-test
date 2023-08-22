@@ -27,3 +27,4 @@ wasm-logger = "0.2.0"
 
 chrono = "0.4.26"
 gloo-utils = "0.2.0"
+markdown-to-html = "0.1.3"
