@@ -1,5 +1,5 @@
 use crate::model::ArticleModel;
-use chrono::Utc;
+use chrono::{DateTime, NaiveDateTime, Utc};
 
 pub trait ArticleRepository {
     fn find_all(&self) -> Vec<ArticleModel>;
@@ -47,7 +47,7 @@ impl Default for MockArticleRepository {
                     description: "Ullamcorper morbi tincidunt ornare massa eget egestas.".to_string(),
                     text: include_str!("articles/hello_planet.md").to_string(),
                     thumbnail: "/static/img/thumbnail2.jpeg".to_string(),
-                    published: Some(Utc::now()),
+                    published: Some(DateTime::from_utc(NaiveDateTime::parse_from_str("2002-04-20 00:00:00", "%Y-%m-%d %H:%M:%S").unwrap(), Utc)),
                 },
                 ArticleModel {
                     id: 3,
