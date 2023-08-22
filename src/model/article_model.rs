@@ -11,6 +11,7 @@ pub struct ArticleModel {
     pub description: String,
     pub text: String,
     pub thumbnail: String,
+    pub header_img: String,
     pub published: Option<DateTime<Utc>>,
 }
 

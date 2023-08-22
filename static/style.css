@@ -31,6 +31,18 @@
     visibility: hidden;
 }
 
+.article {
+    max-width: 940px !important;
+    margin: 2em 0 2em 0;
+}
+
+.article-header-img {
+    width: 100%;
+    height: 30em;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
 .article-content img {
     border-radius: 0.5em;
     max-width: 100%;
@@ -56,6 +68,10 @@ pre[class*=language-] {
 .thumbnail img {
     height: 100%;
     object-fit: cover;
+}
+
+.article-title {
+    font-size: 4em;
 }
 
 .article-subtitle {

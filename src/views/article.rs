@@ -17,9 +17,9 @@ pub fn article(props: &Props) -> Html {
 
     html! {
         <div class="container article">
-            <h1>{ &article.title }</h1>
-            <h2 class="article-subtitle mx-1">{ article.subtitle() }</h2>
-            <hr />
+            <h1 class="article-title my-4">{ &article.title }</h1>
+            <h2 class="article-subtitle mb-3">{ article.subtitle() }</h2>
+            <img class="article-header-img" src={ article.header_img.clone() } />
             <Markdown classes={ classes!("container-sm", "article-content") } markdown={ article.text } />
         </div>
     }

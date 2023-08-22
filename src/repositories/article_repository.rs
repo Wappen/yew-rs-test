@@ -38,6 +38,7 @@ impl Default for MockArticleRepository {
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.".to_string(),
                     text: include_str!("articles/hello_world.md").to_string(),
                     thumbnail: "/static/img/thumbnail.png".to_string(),
+                    header_img: "/static/img/thumbnail.png".to_string(),
                     published: Some(Utc::now()),
                 },
                 ArticleModel {
@@ -47,6 +48,7 @@ impl Default for MockArticleRepository {
                     description: "Ullamcorper morbi tincidunt ornare massa eget egestas.".to_string(),
                     text: include_str!("articles/hello_planet.md").to_string(),
                     thumbnail: "/static/img/thumbnail2.jpeg".to_string(),
+                    header_img: "/static/img/thumbnail2.jpeg".to_string(),
                     published: Some(DateTime::from_utc(NaiveDateTime::parse_from_str("2002-04-20 00:00:00", "%Y-%m-%d %H:%M:%S").unwrap(), Utc)),
                 },
                 ArticleModel {
@@ -56,6 +58,7 @@ impl Default for MockArticleRepository {
                     description: "Accumsan lacus vel facilisis volutpat est velit egestas. Suspendisse interdum consectetur libero id faucibus.".to_string(),
                     text: include_str!("articles/hello_universe.md").to_string(),
                     thumbnail: "/static/img/thumbnail3.png".to_string(),
+                    header_img: "/static/img/thumbnail3.png".to_string(),
                     published: None,
                 },
             ],
