@@ -17,6 +17,16 @@ pub struct MockArticleRepository {
     articles: Vec<ArticleModel>,
 }
 
+impl ArticleRepository for MockArticleRepository {
+    fn find_all(&self) -> Vec<ArticleModel> {
+        self.articles.clone()
+    }
+
+    fn find_by_id(&self, id: i32) -> Option<ArticleModel> {
+        self.articles.iter().find(|a| a.id == id).cloned()
+    }
+}
+
 impl Default for MockArticleRepository {
     fn default() -> Self {
         MockArticleRepository {
@@ -50,15 +60,5 @@ impl Default for MockArticleRepository {
                 },
             ],
         }
-    }
-}
-
-impl ArticleRepository for MockArticleRepository {
-    fn find_all(&self) -> Vec<ArticleModel> {
-        self.articles.clone()
-    }
-
-    fn find_by_id(&self, id: i32) -> Option<ArticleModel> {
-        self.articles.iter().find(|a| a.id == id).cloned()
     }
 }

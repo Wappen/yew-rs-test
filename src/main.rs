@@ -38,6 +38,14 @@ struct AppContext {
     pub article_repo: Rc<dyn ArticleRepository>,
 }
 
+impl AppContext {
+    pub fn mocking() -> Self {
+        Self {
+            article_repo: Rc::new(MockArticleRepository::default()),
+        }
+    }
+}
+
 impl Clone for AppContext {
     fn clone(&self) -> Self {
         Self {
@@ -52,19 +60,11 @@ impl PartialEq for AppContext {
     }
 }
 
-impl Default for AppContext {
-    fn default() -> Self {
-        Self {
-            article_repo: Rc::new(MockArticleRepository::default()),
-        }
-    }
-}
-
 #[function_component(App)]
 fn app() -> Html {
     html! {
         <div>
-            <ContextProvider<AppContext> context={AppContext::default()}>
+            <ContextProvider<AppContext> context={AppContext::mocking()}>
                 <BrowserRouter>
                     <Navbar brand="Wappen" logo="/static/img/logo.png">
                         <NavbarItem name="Home" to={MainRoute::Home}/>
