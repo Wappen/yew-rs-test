@@ -15,16 +15,12 @@ pub fn article(props: &Props) -> Html {
     let ctx = use_context::<AppContext>().unwrap();
     let article = ctx.article_repo.find_by_id(props.id).unwrap();
 
-    let subtitle = match article.published {
-        Some(published) => format!("by {} on {}", article.author, published.format("%Y/%m/%d")),
-        None => format!("by {}", article.author),
-    };
-
     html! {
-        <div class="container">
-            <h1>{ article.title }</h1>
-            <h2 class="article-subtitle">{ subtitle }</h2>
-            <Markdown markdown={ article.text } />
+        <div class="container article">
+            <h1>{ &article.title }</h1>
+            <h2 class="article-subtitle mx-1">{ article.subtitle() }</h2>
+            <hr />
+            <Markdown classes={ classes!("container-sm", "article-content") } markdown={ article.text } />
         </div>
     }
 }

@@ -6,6 +6,7 @@ use crate::SafeHtml;
 #[derive(Properties, PartialEq)]
 pub struct Props {
     pub markdown: String,
+    pub classes: Classes,
 }
 
 #[wasm_bindgen]
@@ -26,7 +27,7 @@ pub fn markdown(props: &Props) -> Html {
     });
 
     html! {
-        <div class="container m-3 p-0">
+        <div class={ classes!(props.classes.clone()) }>
         <SafeHtml html={ html }/>
         </div>
     }

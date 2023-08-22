@@ -13,3 +13,16 @@ pub struct ArticleModel {
     pub thumbnail: String,
     pub published: Option<DateTime<Utc>>,
 }
+
+impl ArticleModel {
+    pub fn subtitle(&self) -> String {
+        match self.published {
+            Some(published) => format!(
+                "by {} on {}",
+                self.author,
+                published.format("%a, %d. %b %Y")
+            ),
+            None => format!("by {}", self.author),
+        }
+    }
+}

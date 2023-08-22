@@ -31,6 +31,19 @@
     visibility: hidden;
 }
 
+.article-content img {
+    border-radius: 0.5em;
+}
+
+.article hr {
+    opacity: 0.1;
+}
+
+pre[class*=language-] {
+    border-radius: 0.5em;
+    background: #2b2d33 !important;
+}
+
 .thumbnail img {
     height: 100%;
     object-fit: cover;
@@ -40,8 +53,4 @@
     opacity: 0.7;
     font-weight: 400;
     font-size: 1em;
-}
-
-pre[class*=language-] {
-    background: #2b2d33 !important;
 }

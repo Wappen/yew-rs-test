@@ -11,15 +11,6 @@ pub struct Props {
 
 #[function_component(ArticlePreview)]
 pub fn article_preview(props: &Props) -> Html {
-    let subtitle = match props.article.published {
-        Some(published) => format!(
-            "by {} on {}",
-            props.article.author,
-            published.format("%Y/%m/%d")
-        ),
-        None => format!("by {}", props.article.author),
-    };
-
     let description = if props.article.description.len() > 100 {
         format!(
             "{}…",
@@ -32,7 +23,7 @@ pub fn article_preview(props: &Props) -> Html {
     html! {
         <Card<MainRoute>
                 title={ props.article.title.clone() }
-                subtitle={ subtitle }
+                subtitle={ props.article.subtitle() }
                 thumbnail={ props.article.thumbnail.clone() }
                 to={ MainRoute::Article { id: props.article.id } }>
             { description }
