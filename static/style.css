@@ -41,3 +41,7 @@
     font-weight: 400;
     font-size: 1em;
 }
+
+pre[class*=language-] {
+    background: #2b2d33 !important;
+}

@@ -4,6 +4,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## How?
 
+```rust
+fn foo() -> Bar {
+    
+
+    Bar {
+        baz: 42,
+    }
+}
+```
+
 Mauris augue neque gravida in fermentum et sollicitudin. Non blandit massa enim nec dui nunc mattis. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Felis eget velit aliquet sagittis id consectetur purus ut. Mauris sit amet massa vitae tortor condimentum lacinia. Odio facilisis mauris sit amet massa. Viverra vitae congue eu consequat. Amet purus gravida quis blandit turpis cursus in. Neque viverra justo nec ultrices dui. Quisque non tellus orci ac auctor augue mauris augue neque. Urna duis convallis convallis tellus. Eu volutpat odio facilisis mauris sit amet. Sed risus pretium quam vulputate dignissim suspendisse in est. Porttitor leo a diam sollicitudin. Morbi non arcu risus quis varius quam quisque. Lacus sed viverra tellus in hac habitasse. Diam quam nulla porttitor massa id neque. Tincidunt praesent semper feugiat nibh.
 
 ## When?
