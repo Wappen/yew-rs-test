@@ -20,7 +20,7 @@ pub fn card<R: Routable + 'static>(props: &Props<R>) -> Html {
 
     let body = html! {
         <div class="card-body">
-            <h1 class="card-title">{ &props.title }</h1>
+            <h2 class="card-title">{ &props.title }</h2>
             {
                 props.subtitle.as_ref().map_or(html! {}, |subtitle| html! {
                     <h6 class="card-subtitle">{ subtitle }</h6>

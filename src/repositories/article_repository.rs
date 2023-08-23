@@ -49,7 +49,7 @@ impl Default for MockArticleRepository {
                     text: include_str!("articles/hello_planet.md").to_string(),
                     thumbnail: "/static/img/thumbnail2.jpeg".to_string(),
                     header_img: "/static/img/thumbnail2.jpeg".to_string(),
-                    published: Some(DateTime::from_utc(NaiveDateTime::parse_from_str("2002-04-20 00:00:00", "%Y-%m-%d %H:%M:%S").unwrap(), Utc)),
+                    published: Some(date_from_str("2002-04-20")),
                 },
                 ArticleModel {
                     id: 3,
@@ -64,4 +64,12 @@ impl Default for MockArticleRepository {
             ],
         }
     }
+}
+
+fn date_from_str(s: &str) -> DateTime<Utc> {
+    DateTime::from_utc(
+        NaiveDateTime::parse_from_str(format!("{} 00:00:00", s).as_str(), "%Y-%m-%d %H:%M:%S")
+            .unwrap(),
+        Utc,
+    )
 }
