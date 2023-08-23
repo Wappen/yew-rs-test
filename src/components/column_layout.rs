@@ -24,7 +24,7 @@ pub struct ColumnProps {
 
 #[function_component(Column)]
 pub fn column(props: &ColumnProps) -> Html {
-    let class = format!("col-sm-{}", props.width);
+    let class = format!("col-lg-{}", props.width);
 
     match &props.children {
         Some(c) => {
