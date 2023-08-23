@@ -14,13 +14,13 @@ pub struct Props<R: Routable + 'static> {
 pub fn card<R: Routable + 'static>(props: &Props<R>) -> Html {
     let thumbnail = props.thumbnail.as_ref().map_or(html! {}, |thumbnail| {
         html! {
-            <img src={ thumbnail.clone() } class="card-img" alt="..." />
+            <img src={ thumbnail.clone() } alt="..." />
         }
     });
 
     let body = html! {
         <div class="card-body">
-            <h5 class="card-title">{ &props.title }</h5>
+            <h1 class="card-title">{ &props.title }</h1>
             {
                 props.subtitle.as_ref().map_or(html! {}, |subtitle| html! {
                     <h6 class="card-subtitle">{ subtitle }</h6>
@@ -34,10 +34,12 @@ pub fn card<R: Routable + 'static>(props: &Props<R>) -> Html {
     html! {
         <Link<R> classes="card article-preview" to={ props.to.clone().unwrap_or(Routable::not_found_route().unwrap()) }>
             <div class="row g-0">
-                <div class="col-md-4 thumbnail">
-                    { thumbnail }
+                <div class="col-4">
+                    <div class="card-img thumbnail">
+                        { thumbnail }
+                    </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                     { body }
                 </div>
             </div>
