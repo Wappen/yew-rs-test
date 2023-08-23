@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-use crate::{AppContext, ArticlePreview};
+use crate::{AppContext, ArticlePreview, GridLayout};
 
 #[function_component(Home)]
 pub fn home() -> Html {
@@ -10,13 +10,15 @@ pub fn home() -> Html {
     html! {
         <div class="container">
             <h1>{ "Hello, Read My Articles" }</h1>
-            {
-                for articles.iter().map(|article| {
-                    html! {
-                        <ArticlePreview article={article.clone()} />
-                    }
-                })
-            }
+            <GridLayout columns=3>
+                {
+                    for articles.iter().map(|article| {
+                        html! {
+                            <ArticlePreview article={article.clone()} />
+                        }
+                    }).collect::<Vec<Html>>()
+                }
+            </GridLayout>
         </div>
     }
 }

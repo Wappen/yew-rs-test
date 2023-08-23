@@ -17,7 +17,6 @@ pub fn article_preview(props: &Props) -> Html {
                 subtitle={ props.article.subtitle() }
                 thumbnail={ props.article.thumbnail.clone() }
                 to={ MainRoute::Article { id: props.article.id } }>
-            { props.article.description.clone() }
         </Card<MainRoute>>
     }
 }

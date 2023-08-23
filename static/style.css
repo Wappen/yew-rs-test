@@ -13,25 +13,22 @@
 }
 
 .article-preview {
-    margin: 1em;
-    min-width: 15em;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
-
     color: inherit;
+    margin-bottom: 1.8em;
     text-decoration: inherit;
 }
 
-.article-preview .card-body {
-    max-height: 0;
+.article-preview:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.article-preview .card-subtitle {
+    display: inline-block; /* prevent hover over underline */
 }
 
 .article-preview .card-body .card-text {
     font-size: 1.1em;
-    overflow: hidden;
 }
 
 .article-preview .card-subtitle {
@@ -39,14 +36,9 @@
     font-weight: 400;
 }
 
-.article-preview hr {
-    margin: 0.5em 0;
-    visibility: hidden;
-}
-
 .thumbnail {
     position: relative;
-    padding-bottom: 100%;
+    padding-bottom: 80%;
     height: 0;
     overflow: hidden;
 }

@@ -70,11 +70,11 @@ fn app() -> Html {
                         <NavbarItem name="About" to={MainRoute::About}/>
                     </Navbar>
                     <ColumnLayout>
-                        <Column width=2 />
-                        <Column width=8>
+                        <Column width=0 />
+                        <Column width=12>
                             <Switch<MainRoute> render={switch_main}/>
                         </Column>
-                        <Column width=2 />
+                        <Column width=0 />
                     </ColumnLayout>
                 </BrowserRouter>
             </ContextProvider<AppContext>>
