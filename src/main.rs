@@ -63,17 +63,21 @@ impl PartialEq for AppContext {
 #[function_component(App)]
 fn app() -> Html {
     html! {
-        <div>
             <ContextProvider<AppContext> context={AppContext::mocking()}>
                 <BrowserRouter>
                     <Navbar brand="Wappen" logo="/static/img/logo.png">
                         <NavbarItem name="Home" to={MainRoute::Home}/>
                         <NavbarItem name="About" to={MainRoute::About}/>
                     </Navbar>
-                    <Switch<MainRoute> render={switch_main}/>
+                    <ColumnLayout>
+                        <Column width=2 />
+                        <Column width=8>
+                            <Switch<MainRoute> render={switch_main}/>
+                        </Column>
+                        <Column width=2 />
+                    </ColumnLayout>
                 </BrowserRouter>
             </ContextProvider<AppContext>>
-        </div>
     }
 }
 

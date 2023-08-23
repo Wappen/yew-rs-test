@@ -28,7 +28,7 @@ pub fn markdown(props: &Props) -> Html {
 
     html! {
         <div class={ classes!(props.classes.clone()) }>
-        <SafeHtml html={ html }/>
+            <SafeHtml html={ html }/>
         </div>
     }
 }
