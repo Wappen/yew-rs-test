@@ -8,7 +8,6 @@ pub struct ArticleModel {
     pub id: ArticleId,
     pub title: String,
     pub author: String,
-    pub description: String,
     pub text: String,
     pub thumbnail: String,
     pub header_img: String,

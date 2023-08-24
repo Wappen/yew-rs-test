@@ -10,7 +10,7 @@ pub fn home() -> Html {
     html! {
         <div class="container">
             <h1>{ "Hello, Read My Articles" }</h1>
-            <GridLayout columns=3>
+            <GridLayout columns=4>
                 {
                     for articles.iter().map(|article| {
                         html! {

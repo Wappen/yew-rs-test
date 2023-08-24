@@ -69,13 +69,7 @@ fn app() -> Html {
                         <NavbarItem name="Home" to={MainRoute::Home}/>
                         <NavbarItem name="About" to={MainRoute::About}/>
                     </Navbar>
-                    <ColumnLayout>
-                        <Column width=0 />
-                        <Column width=12>
-                            <Switch<MainRoute> render={switch_main}/>
-                        </Column>
-                        <Column width=0 />
-                    </ColumnLayout>
+                    <Switch<MainRoute> render={switch_main}/>
                 </BrowserRouter>
             </ContextProvider<AppContext>>
     }

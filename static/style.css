@@ -14,7 +14,6 @@
 
 .article-preview {
     color: inherit;
-    margin-bottom: 1.8em;
     text-decoration: inherit;
 }
 
@@ -24,7 +23,8 @@
 }
 
 .article-preview .card-subtitle {
-    display: inline-block; /* prevent hover over underline */
+    /* prevent hover over underline */
+    display: inline-block;
 }
 
 .article-preview .card-body .card-text {
