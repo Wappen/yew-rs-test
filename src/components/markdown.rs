@@ -17,6 +17,13 @@ extern "C" {
 
 #[function_component(Markdown)]
 pub fn markdown(props: &Props) -> Html {
+    if props.markdown.is_empty() {
+        return html! {
+            <div class={ classes!(props.classes.clone()) }>
+            </div>
+        };
+    }
+
     let html = match markdown_to_html::parser::parse_markdown(&props.markdown) {
         Ok((_, md)) => translator::translate(md),
         Err(e) => format!("Could not parse markdown: {}", e),
