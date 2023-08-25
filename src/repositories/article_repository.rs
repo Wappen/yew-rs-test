@@ -59,7 +59,7 @@ impl Default for MockArticleRepository {
                     published: None,
                 },
                 ArticleModel {
-                    id: 1,
+                    id: 4,
                     title: "Au Revoir".to_string(),
                     author: "Lenz Koxholt".to_string(),
                     text: "None".to_string(),
@@ -68,7 +68,7 @@ impl Default for MockArticleRepository {
                     published: Some(date_from_str("2019-11-09")),
                 },
                 ArticleModel {
-                    id: 2,
+                    id: 5,
                     title: "Jo, Bis Dann!".to_string(),
                     author: "Lebinoir".to_string(),
                     text: "None".to_string(),
@@ -77,7 +77,7 @@ impl Default for MockArticleRepository {
                     published: Some(date_from_str("2019-04-01")),
                 },
                 ArticleModel {
-                    id: 3,
+                    id: 6,
                     title: "Hasta La Proxima!".to_string(),
                     author: "Glenz".to_string(),
                     text: "None".to_string(),
